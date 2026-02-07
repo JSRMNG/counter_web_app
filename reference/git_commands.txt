@@ -1,0 +1,99 @@
+IMPORTANT GIT COMMANDS – QUICK REFERENCE (SHORT & PRACTICAL)
+
+  ---------------------------------
+  BASICS
+  ---------------------------------
+  git init - Initialize a new git repository in the current folder.
+
+  git clone - Download an existing remote repository to your local system.
+  ---------------------------------
+
+STATUS & INFO
+
+git status - Show current state of files (modified, staged, untracked).
+
+git log –oneline - Show short commit history.
+
+git branch - Show all local branches.
+
+git branch -a - Show local + remote branches.
+
+  ---------------------------------
+  ADD & COMMIT
+  ---------------------------------
+  git add . - Stage all changed files for commit.
+
+  git add - Stage only a specific file.
+
+  git commit -m “message”  - Save staged changes with a message.
+  ---------------------------------
+
+PUSH & PULL
+
+git pull - Fetch + merge latest changes from remote.
+
+git pull origin main - Pull latest changes from main branch.
+
+git push - Upload your commits to remote.
+
+git push origin main - Push commits to main branch.
+
+  ---------------------------------
+  REMOTE
+  ---------------------------------
+  git remote -v - Show remote repo URLs.
+
+  git remote add origin - Link local repo to GitHub remote.
+
+  git remote set-url origin - Change remote URL.
+  ---------------------------------
+
+CONFIG
+
+git config user.name - Check configured username.
+
+git config user.email - Check configured email.
+
+git config –global user.name “Name” - Set global username.
+
+git config –global user.email “email” - Set global email.
+
+  ---------------------------------
+  UNDO / FIX MISTAKES
+  ---------------------------------
+  git reset –soft HEAD~1 - Undo last commit but keep file changes.
+
+  git reset –hard HEAD~1 - DANGER: Completely delete last commit + changes.
+
+  git revert - Safely undo a pushed commit by creating a new commit.
+  ---------------------------------
+
+STASH
+
+git stash - Temporarily save uncommitted changes.
+
+git stash pop - Restore stashed changes.
+
+  ---------------------------------
+  BRANCHING
+  ---------------------------------
+  git checkout -b new_branch - Create and switch to new branch.
+
+  git checkout main - Switch back to main branch.
+
+  git merge new_branch  - Merge branch into current branch.
+  ---------------------------------
+
+DANGEROUS COMMANDS (USE CAREFULLY)
+
+git reset –hard - Deletes changes permanently.
+
+git push –force - Overwrites remote history — can break team repos.
+
+  ---------------------------------
+  MENTAL MODEL
+  ---------------------------------
+  HEAD = your current position
+  origin = remote GitHub repository
+
+  ---------------------------------
