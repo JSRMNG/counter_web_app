@@ -1,0 +1,9 @@
+1. git branch --show-current //counter_web_app_mng
+2. if it shows main then switch - git switch counter_web_app_mng
+3. git branch --show-current
+4. git add .
+5. git commit -m "Message"
+6. git push -u origin counter_web_app_mng -- initial push then you can use git push
+7. git push
+8. (Optional) git log --oneline -1 -- copy the commit_id
+9. (Optional) git show copied_commit_id
