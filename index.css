@@ -1,9 +1,33 @@
 * {
   margin: 0px;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Arial, sans-serif;
+  
+}
+
+.counter {
+  width: 200px;
+  margin: 40px;
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
 }
 
 .counter-display {
+  font-size: 32px;
+  margin: 15px 0;
+}
 
+.counter button {
+  width: 100%;
+  font-size: 20px;
+  padding: 8px;
+  margin: 5px 0;
+  cursor: pointer;
 }
 
 .counter-increment {
