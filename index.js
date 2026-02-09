@@ -1,6 +1,6 @@
 var incrementButton = document.querySelector(".counter-increment");
 
-var Display = document.querySelector(".counter-dsiplay");
+var display = document.querySelector(".counter-display");
 
 var count = 0;
 
