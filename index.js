@@ -23,3 +23,18 @@ decrementButton.addEventListener("click", function () {
   updateDisplay();
 
 });
+
+document.addEventListener("keydown",function(event) {
+	if(event.key === "ArrowUp") {
+		count++;
+		updateDisplay();
+		}
+	
+	if(event.key === "ArrowDown") {
+		if(count > 0) {
+			count--;
+			}
+		updateDisplay();
+		}
+	});
+
