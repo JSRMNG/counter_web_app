@@ -5,17 +5,21 @@ var display = document.querySelector(".counter-display");
 
 var count = 0;
 
-incrementButton.addEventListener("click", function () {
-  count = count + 1;
+function updateDisplay() {
   display.innerText = count;
+} 
+
+incrementButton.addEventListener("click", function () {
+  count++;
+  updateDisplay();
 });
 
 decrementButton.addEventListener("click", function () {
 
   if (count > 0) {
     count--;
-    display.innerText = count;
   }
+  
+  updateDisplay();
 
-  display.innerText = count;
 });
